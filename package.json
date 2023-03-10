@@ -1,0 +1,12 @@
+{
+  "name": "admin-dashboard-bootstrap-sass",
+  "version": "1.0.0",
+  "description": "Admin Dashboard",
+  "author": "MG",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "material-icons": "^1.13.2"
+  }
+}
