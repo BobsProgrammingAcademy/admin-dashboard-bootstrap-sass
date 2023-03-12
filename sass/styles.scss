@@ -1,14 +1,12 @@
-
-
 // custom variables
 $primary: rgb(29, 38, 154);
 $secondary: rgb(70, 71, 81);
 $success: rgb(46, 125, 50);
+$info: rgb(247, 246, 252);
 $warning: rgb(255, 111, 0);
 $danger: rgb(213, 0, 0);
-$dark: rgb(180, 184, 244);
 $light: rgb(255, 255, 255);
-$body-bg: rgb(247, 246, 252);
+$dark: rgb(180, 184, 244);
 $line-height: 1px;
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
@@ -18,7 +16,7 @@ $line-height: 1px;
 body {
   margin: 0;
   padding: 0;
-  background-color: $body-bg;
+  background-color: $info;
   color: $secondary;
 }
 
