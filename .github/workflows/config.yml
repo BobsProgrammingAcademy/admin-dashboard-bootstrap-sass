@@ -19,9 +19,6 @@ jobs:
           fetch-depth: 10
           submodules: 10
 
-      - name: Make destination directory for compiled CSS
-        run: mkdir -vp /css
-
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.5.1
         with:
