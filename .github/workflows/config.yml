@@ -20,7 +20,7 @@ jobs:
           submodules: 10
 
       - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.5.1
+        uses: gha-utilities/sass-build@v0.4.7
         with:
-          source: /sass/styles.scss
-          destination: /css/styles.css
+          source: ./sass/styles.scss
+          destination: ./css/styles.css
