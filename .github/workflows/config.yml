@@ -1,0 +1,29 @@
+name: Sass CI
+
+on:
+  push:
+    branches: ['master']
+
+  pull_request:
+    branches: ['master']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: 10
+          submodules: 10
+
+      - name: Make destination directory for compiled CSS
+        run: mkdir -vp ./css
+
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.5.1
+        with:
+          source: ./sass/styles.scss
+          destination: ./css/styles.css
