@@ -19,6 +19,9 @@ jobs:
           fetch-depth: 10
           submodules: 10
 
+      - name: Install Dependencies
+        run: npm install
+
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.5.1
         with:
